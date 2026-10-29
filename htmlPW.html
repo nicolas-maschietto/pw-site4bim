@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#101510">
-    <title>Aprenda HTML | FrontStart</title>
+    <title>FrontEscola</title>
     <link rel="stylesheet" href="SitePWcss.css">
     <script src="SitePWjs.js" defer></script>
-    
 </head>
 <body>
 
     <header class="cabeca">
         <a href="index.html" class="marca">
-             <span class="marca-icon">&lt;/&gt;</span>
+            <span class="marca-icon">&lt;/&gt;</span>
             <span>Front<span class="destaque">Escola</span></span>
         </a>
 
@@ -28,7 +27,7 @@
     <main class="aula">
 
         <section class="aula-sec">
-            <span class="etiqueta">MÓDULO 01 · INICIANTE</span>
+            <span class="etiqueta">MÓDULO 01  INICIANTE</span>
 
             <h1>Aprenda <span class="destaque">HTML</span> do zero.</h1>
 
@@ -47,8 +46,8 @@
             <h2>01. O que é HTML?</h2>
 
             <p>
-                HTML significa <strong>HyperText Markup Language</strong>,
-                ou Linguagem de Marcação de Hipertexto. É utilizada para
+                HTML significa <strong>HyperText Markup Language</strong>
+                ou Linguagem de Marcação de Hipertexto é usada para
                 organizar e estruturar o conteúdo de páginas da internet.
             </p>
 
@@ -60,25 +59,28 @@
 
             <div class="grade-aula">
                 <article class="cartao-aula">
-                    <div class="numero-aula">01 · ESTRUTURA</div>
+                    <div class="numero-aula">01  ESTRUTURA</div>
                     <h3 class="destaque">HTML</h3>
                     <p>Define títulos, parágrafos, imagens, links e outros elementos.</p>
                 </article>
 
                 <article class="cartao-aula">
-                    <div class="numero-aula">02 · APARÊNCIA</div>
+                    <div class="numero-aula">02  APARÊNCIA</div>
                     <h3 class="destaque">CSS</h3>
                     <p>Define cores, tamanhos, espaçamentos e organização visual.</p>
                 </article>
 
                 <article class="cartao-aula">
-                    <div class="numero-aula">03 · INTERATIVIDADE</div>
+                    <div class="numero-aula">03  INTERATIVIDADE</div>
                     <h3 class="destaque">JavaScript</h3>
-                    <p>Permite responder a cliques, validar formulários e alterar conteúdos.</p>
+                    <p>Permite responder a cliques, validar formulários e mudar conteúdos.</p>
                 </article>
 
+
                 <article class="cartao-aula">
-                    <div class="numero-aula">04 · OBJETIVO</div>
+
+
+                    <div class="numero-aula">04  OBJETIVO</div>
                     <h3 class="destaque">Seu primeiro site</h3>
                     <p>Você pode combinar as três tecnologias para criar páginas completas.</p>
                 </article>
@@ -88,60 +90,49 @@
         <section class="secao-aula">
             <h2>02. A estrutura básica do HTML</h2>
 
+
             <p>
                 Todo documento HTML começa com uma estrutura que informa
                 ao navegador como interpretar a página.
             </p>
 
-            <div class="codigo">
-                <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="pt-BR"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport"
-          content="width=device-width, initial-scale=1"&gt;
-    &lt;title&gt;Meu primeiro site&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
-    &lt;p&gt;Este é meu primeiro site.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-            </div>
+            <h3>Exemplo: &lt;!DOCTYPE html&gt; &lt;html lang="pt-BR"&gt; &lt;head&gt; &lt;meta charset="UTF-8"&gt; &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt; &lt;title&gt;Meu primeiro site&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;Olá, mundo!&lt;/h1&gt; &lt;p&gt;Este é meu primeiro site.&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</h3>
 
             <div class="nota">
                 <strong>Importante:</strong> a maioria das tags possui
                 abertura e fechamento. Por exemplo,
-                <code>&lt;p&gt;</code> inicia um parágrafo e
-                <code>&lt;/p&gt;</code> termina esse parágrafo.
-                Algumas tags, como <code>&lt;img&gt;</code>, não precisam
+                &lt;p&gt; inicia um parágrafo e
+                &lt;/p&gt; termina esse parágrafo.
+                Algumas tags, como &lt;img&gt;, não precisam
                 de uma tag de fechamento.
             </div>
+
+
 
             <h3>Para que serve cada parte?</h3>
 
             <div class="lista-tags">
-                <code>&lt;!DOCTYPE&gt;</code>
+                &lt;!DOCTYPE&gt;
                 <span>Informa que o documento utiliza HTML moderno.</span>
             </div>
 
             <div class="lista-tags">
-                <code>&lt;html&gt;</code>
-                <span>É o elemento principal que contém o documento HTML.</span>
+                &lt;html&gt;
+                       <span>É o elemento principal que contém o documento HTML.</span>
             </div>
 
             <div class="lista-tags">
-                <code>&lt;head&gt;</code>
+                &lt;head&gt;
                 <span>Contém informações sobre a página, como título e configurações.</span>
             </div>
 
             <div class="lista-tags">
-                <code>&lt;title&gt;</code>
+                &lt;title&gt;
                 <span>Define o título que aparece na aba do navegador.</span>
             </div>
 
             <div class="lista-tags">
-                <code>&lt;body&gt;</code>
+                &lt;body&gt;
                 <span>Contém o conteúdo que aparece na página.</span>
             </div>
         </section>
@@ -151,31 +142,27 @@
 
             <p>
                 Os títulos organizam as informações. O HTML possui seis
-                níveis de título, de <code>&lt;h1&gt;</code> a
-                <code>&lt;h6&gt;</code>. Já a tag
-                <code>&lt;p&gt;</code> é utilizada para parágrafos.
+                níveis de título, de &lt;h1&gt; a
+                &lt;h6&gt;. Já a tag
+                 &lt;p&gt; é usada para parágrafos.
             </p>
 
-            <div class="codigo">
-                <pre><code>&lt;h1&gt;Meu primeiro site&lt;/h1&gt;
-&lt;h2&gt;Sobre mim&lt;/h2&gt;
-&lt;p&gt;Olá! Estou aprendendo HTML.&lt;/p&gt;
-&lt;h2&gt;Meus interesses&lt;/h2&gt;
-&lt;p&gt;Gosto de tecnologia e programação.&lt;/p&gt;</code></pre>
-            </div>
+
+
+            <h3>Exemplo: &lt;h1&gt;Meu primeiro site&lt;/h1&gt; &lt;h2&gt;Sobre mim&lt;/h2&gt; &lt;p&gt;Olá! Estou aprendendo HTML.&lt;/p&gt; &lt;h2&gt;Meus interesses&lt;/h2&gt; &lt;p&gt;Gosto de tecnologia e programação.&lt;/p&gt;</h3>
 
             <div class="exemplo-visual">
                 <h1>Meu primeiro site</h1>
                 <h2>Sobre mim</h2>
-                <p>Olá! Estou aprendendo HTML.</p>
+                <p>Olá,to aprendendo HTML</p>
                 <h2>Meus interesses</h2>
                 <p>Gosto de tecnologia e programação.</p>
             </div>
 
             <div class="nota">
-                Geralmente, utilize um <code>&lt;h1&gt;</code> para o
+                Geralmente, utilize um &lt;h1&gt; para o
                 título principal da página e organize os subtítulos com
-                <code>&lt;h2&gt;</code> e <code>&lt;h3&gt;</code>.
+                &lt;h2&gt; e &lt;h3&gt;.
             </div>
         </section>
 
@@ -187,15 +174,11 @@
                     <h3>Como criar um link</h3>
 
                     <p>
-                        A tag <code>&lt;a&gt;</code> cria um link.
-                        O atributo <code>href</code> indica o destino.
+                        A tag &lt;a&gt; cria um link.
+                            O atributo href indica o destino.
                     </p>
 
-                    <div class="codigo">
-                        <pre><code>&lt;a href="https://www.google.com"&gt;
-    Acessar o Google
-&lt;/a&gt;</code></pre>
-                    </div>
+                    <h3>Exemplo: &lt;a href="https://www.google.com"&gt; Acessar o Google &lt;/a&gt;</h3>
 
                     <div class="exemplo-visual">
                         <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
@@ -204,26 +187,20 @@
                     </div>
                 </article>
 
-                <article class="cartao-aula">
+                    <article class="cartao-aula">
                     <h3>Como adicionar uma imagem</h3>
 
                     <p>
-                        A tag <code>&lt;img&gt;</code> exibe uma imagem.
-                        O atributo <code>src</code> indica sua origem e
-                        <code>alt</code> fornece uma descrição.
+                        A tag &lt;img&gt; exibe uma imagem.
+                        O atributo src indica sua origem e
+                        alt fornece uma descrição.
                     </p>
 
-                    <div class="codigo">
-                        <pre><code>&lt;img
-    src="imagem.jpg"
-    alt="Descrição da imagem"
-    width="250"
-&gt;</code></pre>
-                    </div>
+                    <h3>Exemplo: &lt;img src="imagem.jpg" alt="Descrição da imagem" width="250" &gt;</h3>
 
                     <p>
-                        O arquivo <code>imagem.jpg</code> precisa existir
-                        no local indicado pelo caminho de <code>src</code>.
+                        O arquivo imagem.jpg precisa existir
+                        no local indicado pelo caminho de src.
                     </p>
                 </article>
             </div>
@@ -238,13 +215,7 @@
                 <article class="cartao-aula">
                     <h3>Lista não ordenada</h3>
 
-                    <div class="codigo">
-                        <pre><code>&lt;ul&gt;
-    &lt;li&gt;HTML&lt;/li&gt;
-    &lt;li&gt;CSS&lt;/li&gt;
-    &lt;li&gt;JavaScript&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                    </div>
+                    <h3>Exemplo: &lt;ul&gt; &lt;li&gt;HTML&lt;/li&gt; &lt;li&gt;CSS&lt;/li&gt; &lt;li&gt;JavaScript&lt;/li&gt; &lt;/ul&gt;</h3>
 
                     <div class="exemplo-visual">
                         <ul>
@@ -260,20 +231,15 @@
                 <article class="cartao-aula">
                     <h3>Lista ordenada</h3>
 
-                    <div class="codigo">
-                        <pre><code>&lt;ol&gt;
-    &lt;li&gt;Estudar HTML&lt;/li&gt;
-    &lt;li&gt;Aprender CSS&lt;/li&gt;
-    &lt;li&gt;Praticar JavaScript&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-                    </div>
+                    <h3>Exemplo: &lt;ol&gt; &lt;li&gt;Estudar HTML
+                        &lt;/li&gt; &lt;li&gt;Aprender CSS&lt;/li&gt; &lt;li&gt;Praticar JavaScript&lt;/li&gt; &lt;/ol&gt;</h3>
 
                     <div class="exemplo-visual">
                         <ol>
                             <li>Estudar HTML</li>
                             <li>Aprender CSS</li>
                             <li>Praticar JavaScript</li>
-                        </ol>
+                         </ol>
                     </div>
 
                     <p>Numera os itens automaticamente.</p>
@@ -286,32 +252,38 @@
 
             <div class="cartao-aula">
                 <div class="lista-tags">
-                    <code>&lt;strong&gt;</code>
+                    &lt;strong&gt;
                     <span>Indica que um conteúdo possui grande importância, normalmente exibido em negrito.</span>
                 </div>
 
+
+
+
+
+
                 <div class="lista-tags">
-                    <code>&lt;em&gt;</code>
+                    &lt;em&gt;
                     <span>Dá ênfase a um trecho, normalmente exibido em itálico.</span>
                 </div>
 
                 <div class="lista-tags">
-                    <code>&lt;br&gt;</code>
+                    &lt;br&gt;
                     <span>Insere uma quebra de linha.</span>
                 </div>
 
                 <div class="lista-tags">
-                    <code>&lt;hr&gt;</code>
-                    <span>Representa uma separação temática, geralmente mostrada como uma linha horizontal.</span>
+                    &lt;hr&gt;
+                            <span>Representa uma separação temática, geralmente mostrada como uma linha horizontal.</span>
                 </div>
 
+
                 <div class="lista-tags">
-                    <code>&lt;div&gt;</code>
+                    &lt;div&gt;
                     <span>Agrupa elementos em um contêiner genérico, útil para organizar o layout.</span>
                 </div>
 
                 <div class="lista-tags">
-                    <code>&lt;button&gt;</code>
+                    &lt;button&gt;
                     <span>Cria um botão que pode realizar ações ou enviar formulários.</span>
                 </div>
             </div>
@@ -324,7 +296,7 @@
                 <div class="passo-numero">1</div>
                 <div>
                     <h3>Crie um arquivo</h3>
-                    <p>Crie um arquivo chamado <code>index.html</code> em seu editor de código.</p>
+                          <p>Crie um arquivo chamado index.html em seu editor de código.</p>
                 </div>
             </div>
 
@@ -332,7 +304,7 @@
                 <div class="passo-numero">2</div>
                 <div>
                     <h3>Escreva a estrutura</h3>
-                    <p>Adicione as tags principais: <code>html</code>, <code>head</code> e <code>body</code>.</p>
+                    <p>Adicione as tags principais: html, head e body.</p>
                 </div>
             </div>
 
@@ -377,7 +349,7 @@
 
                 <label>
                     <input type="radio" name="pergunta1" value="c">
-                    Armazenar todos os arquivos da internet.
+                           Armazenar todos os arquivos da internet.
                 </label>
             </div>
 
@@ -386,17 +358,17 @@
 
                 <label>
                     <input type="radio" name="pergunta2" value="a">
-                    <code>&lt;h1&gt;</code>
+                    &lt;h1&gt;
                 </label>
 
                 <label>
                     <input type="radio" name="pergunta2" value="b">
-                    <code>&lt;p&gt;</code>
+                          &lt;p&gt;
                 </label>
 
                 <label>
                     <input type="radio" name="pergunta2" value="c">
-                    <code>&lt;img&gt;</code>
+                    &lt;img&gt;
                 </label>
             </div>
 
@@ -404,18 +376,20 @@
                 <h3>3. Qual atributo indica o destino de um link?</h3>
 
                 <label>
+
+
                     <input type="radio" name="pergunta3" value="a">
-                    <code>src</code>
+                    src
                 </label>
 
                 <label>
                     <input type="radio" name="pergunta3" value="b">
-                    <code>alt</code>
+                    alt
                 </label>
 
                 <label>
                     <input type="radio" name="pergunta3" value="c">
-                    <code>href</code>
+                    href
                 </label>
             </div>
 
@@ -431,7 +405,7 @@
 
             <p>
                 Agora você conhece a estrutura básica de uma página e
-                algumas das principais tags. O próximo passo é praticar
+                algumas das principais tags, o próximo passo é praticar
                 e aprender a estilizar seu conteúdo com CSS.
             </p>
 
@@ -455,7 +429,7 @@
         </a>
 
         <p class="autores">Lucas Trivelati e Nicolas Campelo</p>
-
     </footer>
+
 </body>
 </html>
