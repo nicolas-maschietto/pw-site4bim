@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#101510">
-    <title>Aprenda CSS | FrontStart</title>
+    <title>FrontEscola</title>
     <link rel="stylesheet" href="SitePWcss.css">
     <script src="SitePWjs.js" defer></script>
 </head>
@@ -12,7 +12,7 @@
 
     <header class="cabeca">
         <a href="index.html" class="marca">
-            <span>Front</span>Start
+            <span>Front</span>Escola
         </a>
 
         <nav class="menugrid">
@@ -27,11 +27,10 @@
 
         <section class="sec">
             <span class="etiqueta">MÓDULO 02 · INICIANTE</span>
-            <h1>Transforme seu site com <span class="destaque">CSS.</span></h1>
+            <h1>Aprenda a usar <span class="destaque">CSS.</span></h1>
             <p>
-                Aprenda a mudar cores, fontes, tamanhos, espaçamentos e
-                posições. Descubra como transformar uma estrutura HTML
-                simples em uma página visualmente atraente.
+                O CSS serve para mudar as cores, as fontes, os tamanhos
+                e a posição dos elementos de um site.
             </p>
             <a href="#introducao" class="botao-aula">Começar a aprender</a>
         </section>
@@ -40,36 +39,35 @@
             <h2>01. O que é CSS?</h2>
 
             <p>
-                CSS significa <strong>Cascading Style Sheets</strong>,
-                ou Folhas de Estilo em Cascata. É a linguagem utilizada
-                para definir a aparência dos elementos de uma página.
+                CSS significa Cascading Style Sheets, ou Folhas de Estilo
+                em Cascata. Ele é usado para mudar a aparência de uma página HTML.
             </p>
 
             <p>
-                Com CSS, podemos alterar cores, fontes, bordas,
-                espaçamentos, tamanhos, alinhamentos e animações.
+                Com CSS, podemos mudar as cores, as fontes, as bordas,
+                os espaços e a posição dos elementos.
             </p>
 
             <div class="cards-tecnologia">
                 <article class="codigo-card">
                     <h3>HTML</h3>
-                    <p>Cria a estrutura e organiza o conteúdo da página.</p>
+                    <p>Cria a estrutura da página.</p>
                 </article>
 
                 <article class="codigo-card">
                     <h3>CSS</h3>
-                    <p>Define a aparência e a organização visual dos elementos.</p>
+                    <p>Muda a aparência e a posição dos elementos.</p>
                 </article>
 
                 <article class="codigo-card">
                     <h3>JavaScript</h3>
-                    <p>Adiciona interatividade e permite responder às ações do usuário.</p>
+                    <p>Faz as coisas acontecerem quando o usuário interage com o site.</p>
                 </article>
             </div>
 
             <p>
-                Imagine que o HTML cria um botão e o CSS define sua cor,
-                seu tamanho, suas bordas e seus efeitos visuais.
+                Por exemplo, o HTML cria um botão e o CSS permite
+                mudar sua cor, seu tamanho e sua posição.
             </p>
         </section>
 
@@ -77,26 +75,23 @@
             <h2>02. Como funciona o CSS?</h2>
 
             <p>
-                Uma regra CSS possui um seletor e um conjunto de
-                declarações. Cada declaração contém uma propriedade
-                e um valor.
+                No CSS, usamos seletores para escolher os elementos
+                que queremos mudar. Depois, colocamos as propriedades
+                e os valores que vamos usar.
             </p>
 
-            <pre><code>p {
-    color: green;
-    font-size: 18px;
-}</code></pre>
+            <h3>Exemplo: p { color: green; font-size: 18px; }</h3>
 
             <ul>
-                <li><strong>p:</strong> seleciona os parágrafos.</li>
-                <li><strong>color:</strong> define a cor do texto.</li>
-                <li><strong>green:</strong> é o valor da cor escolhida.</li>
-                <li><strong>font-size:</strong> define o tamanho da fonte.</li>
+                <li><strong>p:</strong> escolhe os parágrafos.</li>
+                <li><strong>color:</strong> muda a cor do texto.</li>
+                <li><strong>green:</strong> é a cor escolhida.</li>
+                <li><strong>font-size:</strong> muda o tamanho da letra.</li>
             </ul>
 
             <p>
-                As chaves delimitam as declarações e o ponto e vírgula
-                separa uma declaração da seguinte.
+                As chaves guardam as regras do CSS e o ponto e vírgula
+                separa uma regra da outra.
             </p>
         </section>
 
@@ -106,32 +101,23 @@
             <div class="cards-tecnologia">
                 <article class="codigo-card">
                     <h3>CSS inline</h3>
-                    <p>É escrito diretamente no elemento usando o atributo style.</p>
-                    <pre><code>&lt;p style="color: red;"&gt;
-    Olá, mundo!
-&lt;/p&gt;</code></pre>
-                    <p>É útil para exemplos rápidos, mas não é ideal para estilizar um site inteiro.</p>
+                    <p>É escrito direto na tag HTML, usando o atributo style.</p>
+                    <p>Exemplo: p style="color: red;"</p>
+                    <p>Serve para mudar um elemento específico.</p>
                 </article>
 
                 <article class="codigo-card">
                     <h3>CSS interno</h3>
-                    <p>É escrito dentro da tag style, geralmente no head.</p>
-                    <pre><code>&lt;style&gt;
-    h1 {
-        color: blue;
-    }
-&lt;/style&gt;</code></pre>
-                    <p>Pode ser conveniente em páginas pequenas ou demonstrações.</p>
+                    <p>É escrito dentro da tag style, no HTML.</p>
+                    <p>Exemplo: style { h1 { color: blue; } }</p>
+                    <p>Pode ser usado quando a página é pequena.</p>
                 </article>
 
                 <article class="codigo-card">
                     <h3>CSS externo</h3>
-                    <p>Fica em um arquivo separado, que pode ser reutilizado em várias páginas.</p>
-                    <pre><code>&lt;link
-    rel="stylesheet"
-    href="SitePWcss.css"
-&gt;</code></pre>
-                    <p>É uma boa escolha para manter o projeto organizado.</p>
+                    <p>Fica em um arquivo separado do HTML.</p>
+                    <p>Exemplo: link rel="stylesheet" href="SitePWcss.css"</p>
+                    <p>Ajuda a organizar o código e permite usar o mesmo CSS em várias páginas.</p>
                 </article>
             </div>
         </section>
@@ -140,39 +126,27 @@
             <h2>04. Seletores CSS</h2>
 
             <p>
-                Os seletores indicam quais elementos receberão
-                determinada regra de estilo.
+                Os seletores servem para escolher quais elementos
+                vão receber as mudanças.
             </p>
 
-            <pre><code>p {
-    color: white;
-}
-
-.destaque {
-    color: green;
-}
-
-#titulo-principal {
-    font-size: 32px;
-}</code></pre>
+            <h3>Exemplo: p { color: white; }</h3>
+            <h3>Exemplo: .destaque { color: green; }</h3>
+            <h3>Exemplo: #titulo-principal { font-size: 32px; }</h3>
 
             <ul>
-                <li><strong>p:</strong> seleciona elementos pela tag.</li>
-                <li><strong>.destaque:</strong> seleciona elementos pela classe.</li>
-                <li><strong>#titulo-principal:</strong> seleciona um elemento pelo ID.</li>
+                <li><strong>p:</strong> escolhe os elementos pela tag.</li>
+                <li><strong>.destaque:</strong> escolhe os elementos pela classe.</li>
+                <li><strong>#titulo-principal:</strong> escolhe o elemento pelo ID.</li>
             </ul>
 
-            <pre><code>&lt;h1 id="titulo-principal"&gt;
-    Meu site
-&lt;/h1&gt;
-
-&lt;p class="destaque"&gt;
-    Estou aprendendo CSS!
-&lt;/p&gt;</code></pre>
+            <p>
+                Exemplo de HTML: h1 id="titulo-principal" Meu site /h1
+            </p>
 
             <p>
-                Uma classe pode ser utilizada em vários elementos.
-                Já um ID deve identificar um elemento único dentro do documento.
+                A mesma classe pode ser usada em vários elementos.
+                O ID é usado para identificar um elemento específico.
             </p>
         </section>
 
@@ -180,156 +154,118 @@
             <h2>05. Cores, fontes e tamanhos</h2>
 
             <p>
-                Essas propriedades ajudam a personalizar textos
-                e fundos.
+                Podemos usar o CSS para mudar a cor do fundo,
+                a cor do texto e o tamanho das letras.
             </p>
 
-            <pre><code>body {
-    background-color: #101510;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    color: #b9f66b;
-    font-size: 36px;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
-}</code></pre>
+            <h3>Exemplo: body { background-color: #101510; color: white; font-family: Arial, sans-serif; }</h3>
+            <h3>Exemplo: h1 { color: #b9f66b; font-size: 36px; }</h3>
+            <h3>Exemplo: p { font-size: 18px; line-height: 1.6; }</h3>
 
             <ul>
-                <li><strong>color:</strong> cor do texto.</li>
-                <li><strong>background-color:</strong> cor de fundo.</li>
-                <li><strong>font-family:</strong> família da fonte.</li>
-                <li><strong>font-size:</strong> tamanho do texto.</li>
-                <li><strong>line-height:</strong> altura das linhas.</li>
+                <li><strong>color:</strong> muda a cor do texto.</li>
+                <li><strong>background-color:</strong> muda a cor do fundo.</li>
+                <li><strong>font-family:</strong> escolhe a fonte.</li>
+                <li><strong>font-size:</strong> muda o tamanho da letra.</li>
+                <li><strong>line-height:</strong> muda o espaço entre as linhas.</li>
             </ul>
 
             <p>
-                As cores podem ser representadas por nomes, como
-                <code>green</code>, códigos hexadecimais, como
-                <code>#b9f66b</code>, ou funções como
-                <code>rgb()</code>.
+                As cores podem ser escritas pelo nome, como green,
+                por códigos como #b9f66b ou usando rgb().
             </p>
         </section>
 
         <section class="secao-aula">
-            <h2>06. Margens, espaçamentos e bordas</h2>
+            <h2>06. Margens, espaços e bordas</h2>
 
             <p>
-                Essas propriedades ajudam a organizar os elementos
-                e a criar interfaces mais agradáveis.
+                Essas propriedades ajudam a controlar os espaços
+                e as bordas dos elementos.
             </p>
 
-            <pre><code>.cartao {
-    margin: 20px;
-    padding: 20px;
-    border: 2px solid green;
-    border-radius: 12px;
-}</code></pre>
+            <h3>Exemplo: .cartao { margin: 20px; padding: 20px; border: 2px solid green; border-radius: 12px; }</h3>
 
             <ul>
-                <li><strong>margin:</strong> espaço externo ao elemento.</li>
-                <li><strong>padding:</strong> espaço entre o conteúdo e a borda.</li>
-                <li><strong>border:</strong> borda ao redor do elemento.</li>
+                <li><strong>margin:</strong> cria espaço fora do elemento.</li>
+                <li><strong>padding:</strong> cria espaço entre o conteúdo e a borda.</li>
+                <li><strong>border:</strong> adiciona uma borda.</li>
                 <li><strong>border-radius:</strong> arredonda os cantos.</li>
             </ul>
 
-            <pre><code>&lt;div class="cartao"&gt;
-    &lt;h2&gt;Meu cartão&lt;/h2&gt;
-    &lt;p&gt;Um exemplo de conteúdo.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+            <p>
+                Exemplo de HTML: div class="cartao" Meu cartão /div
+            </p>
         </section>
 
         <section class="secao-aula">
             <h2>07. Organizando elementos com Flexbox</h2>
 
             <p>
-                Flexbox é um modelo de layout que facilita o alinhamento
-                e a distribuição de elementos em linhas ou colunas.
+                O Flexbox ajuda a alinhar os elementos e colocar
+                um ao lado do outro ou em colunas.
             </p>
 
-            <pre><code>.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-}</code></pre>
+            <h3>Exemplo: .container { display: flex; justify-content: center; align-items: center; gap: 12px; }</h3>
 
             <ul>
                 <li><strong>display: flex:</strong> ativa o Flexbox.</li>
-                <li><strong>justify-content:</strong> alinha no eixo principal.</li>
-                <li><strong>align-items:</strong> alinha no eixo transversal.</li>
+                <li><strong>justify-content:</strong> alinha os elementos no eixo principal.</li>
+                <li><strong>align-items:</strong> alinha os elementos no outro eixo.</li>
                 <li><strong>gap:</strong> define o espaço entre os elementos.</li>
             </ul>
 
-            <pre><code>&lt;div class="container"&gt;
-    &lt;div&gt;HTML&lt;/div&gt;
-    &lt;div&gt;CSS&lt;/div&gt;
-    &lt;div&gt;JavaScript&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+            <p>
+                Podemos usar o Flexbox em uma div com outros elementos
+                dentro, como HTML, CSS e JavaScript.
+            </p>
         </section>
 
         <section class="secao-aula">
             <h2>08. Criando layouts com Grid</h2>
 
             <p>
-                CSS Grid ajuda a organizar elementos em linhas e colunas.
-                É especialmente útil para grades de cartões e galerias.
+                O Grid serve para organizar elementos em linhas
+                e colunas. Ele pode ser usado para colocar cartões lado a lado.
             </p>
 
-            <pre><code>.grade {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-}</code></pre>
+            <h3>Exemplo: .grade { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }</h3>
 
             <p>
-                Nesse exemplo, são criadas duas colunas de tamanhos iguais.
-                A propriedade gap define o espaço entre elas.
+                Nesse exemplo, os elementos ficam em duas colunas
+                do mesmo tamanho. O gap define o espaço entre eles.
             </p>
 
-            <pre><code>&lt;div class="grade"&gt;
-    &lt;div&gt;Cartão 1&lt;/div&gt;
-    &lt;div&gt;Cartão 2&lt;/div&gt;
-    &lt;div&gt;Cartão 3&lt;/div&gt;
-    &lt;div&gt;Cartão 4&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+            <p>
+                Podemos usar uma div com a classe grade e colocar
+                os cartões dentro dela.
+            </p>
         </section>
 
         <section class="secao-aula">
-            <h2>09. Criando um site responsivo</h2>
+            <h2>09. Criando um site para várias telas</h2>
 
             <p>
-                Um site responsivo se adapta a diferentes tamanhos
-                de tela, como celulares, tablets e computadores.
-                Uma ferramenta importante para isso são as media queries.
-            </p>
-
-            <pre><code>.grade {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-}
-
-@media (max-width: 600px) {
-    .grade {
-        grid-template-columns: 1fr;
-    }
-}</code></pre>
-
-            <p>
-                Nesse exemplo, a grade utiliza duas colunas em telas maiores
-                e passa para uma coluna quando a largura da tela é de
-                600 pixels ou menos.
+                Um site pode ser aberto em celulares, tablets
+                e computadores. Por isso, é importante que os
+                elementos se ajustem ao tamanho da tela.
             </p>
 
             <p>
-                Também é importante evitar larguras fixas desnecessárias
-                e utilizar imagens que se adaptem ao espaço disponível.
+                Para fazer isso, podemos usar media queries.
+            </p>
+
+            <h3>Exemplo: @media (max-width: 600px) { .grade { grid-template-columns: 1fr; } }</h3>
+
+            <p>
+                Nesse exemplo, a grade tem duas colunas em telas
+                maiores. Quando a tela tem 600 pixels de largura
+                ou menos, ela passa a ter apenas uma coluna.
+            </p>
+
+            <p>
+                Também é bom evitar larguras fixas quando não forem
+                necessárias e deixar as imagens se ajustarem à tela.
             </p>
         </section>
 
@@ -337,11 +273,11 @@ p {
             <h2>10. Como praticar CSS</h2>
 
             <ol>
-                <li>Crie um arquivo chamado <code>estilo.css</code>.</li>
-                <li>Conecte-o ao HTML com a tag <code>link</code>.</li>
-                <li>Experimente alterar cores, fontes, margens e bordas.</li>
-                <li>Utilize Flexbox e Grid para organizar os elementos.</li>
-                <li>Teste sua página em diferentes tamanhos de tela.</li>
+                <li>Crie um arquivo chamado estilo.css.</li>
+                <li>Conecte o arquivo ao HTML usando a tag link.</li>
+                <li>Mude as cores, as fontes, as margens e as bordas.</li>
+                <li>Use Flexbox e Grid para organizar os elementos.</li>
+                <li>Abra a página no celular e no computador para testar.</li>
             </ol>
 
             <a href="index.html#laboratorio" class="botao-aula">
@@ -352,29 +288,29 @@ p {
         <section class="secao-aula">
             <h2>11. Teste seus conhecimentos</h2>
 
-            <p>Escolha uma alternativa para cada pergunta e confira sua pontuação.</p>
+            <p>Responda às perguntas e confira quantas acertou.</p>
 
             <div class="codigo-card">
                 <h3>1. Para que serve o CSS?</h3>
 
                 <label>
                     <input type="radio" name="pergunta1" value="a">
-                    Definir a aparência dos elementos.
+                    Para mudar a aparência dos elementos.
                 </label>
 
                 <label>
                     <input type="radio" name="pergunta1" value="b">
-                    Substituir todos os arquivos HTML.
+                    Para substituir todos os arquivos HTML.
                 </label>
 
                 <label>
                     <input type="radio" name="pergunta1" value="c">
-                    Armazenar todos os dados do site.
+                    Para guardar todos os dados do site.
                 </label>
             </div>
 
             <div class="codigo-card">
-                <h3>2. Qual propriedade altera a cor do texto?</h3>
+                <h3>2. Qual propriedade muda a cor do texto?</h3>
 
                 <label>
                     <input type="radio" name="pergunta2" value="a">
@@ -393,21 +329,21 @@ p {
             </div>
 
             <div class="codigo-card">
-                <h3>3. O que a propriedade padding faz?</h3>
+                <h3>3. Para que serve o padding?</h3>
 
                 <label>
                     <input type="radio" name="pergunta3" value="a">
-                    Altera a família da fonte.
+                    Para mudar a fonte.
                 </label>
 
                 <label>
                     <input type="radio" name="pergunta3" value="b">
-                    Cria espaço fora da borda.
+                    Para criar espaço fora da borda.
                 </label>
 
                 <label>
                     <input type="radio" name="pergunta3" value="c">
-                    Cria espaço entre o conteúdo e a borda.
+                    Para criar espaço entre o conteúdo e a borda.
                 </label>
             </div>
 
@@ -419,10 +355,11 @@ p {
         </section>
 
         <section class="chamada">
-            <h2>Agora é hora de aprender <span>JavaScript!</span></h2>
+            <h2>Agora vamos aprender <span>JavaScript!</span></h2>
             <p>
-                Você já conhece a estrutura HTML e sabe como estilizar
-                páginas com CSS. O próximo passo é adicionar interatividade.
+                Você já aprendeu o básico de HTML e CSS.
+                Agora pode começar a usar JavaScript para
+                adicionar funções ao seu site.
             </p>
             <a href="jsPw.html" class="botao-aula">Continuar para JavaScript</a>
             <a href="index.html" class="botao-aula">Voltar ao início</a>
@@ -437,8 +374,7 @@ p {
         </a>
 
         <p class="autores">Lucas Trivelati e Nicolas Campelo</p>
-
     </footer>
-   
+
 </body>
 </html>
