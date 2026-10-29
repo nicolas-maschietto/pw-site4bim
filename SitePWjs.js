@@ -1,20 +1,15 @@
 const abas = document.querySelectorAll(".editorabas button");
 const paineis = document.querySelectorAll(".editor-painel");
-
 const campoHTML = document.getElementById("codigo-html");
 const campoCSS = document.getElementById("codigo-css");
 const campoJS = document.getElementById("codigo-js");
-
 const botaoExecutar = document.getElementById("executar-codigo");
 const botaoLimpar = document.getElementById("limpar-codigo");
 const botaoRestaurar = document.getElementById("restaurar-codigo");
-
 const previa = document.getElementById("resultado-codigo");
-
 const htmlInicial = campoHTML ? campoHTML.value : "";
 const cssInicial = campoCSS ? campoCSS.value : "";
 const jsInicial = campoJS ? campoJS.value : "";
-
 function abrirAba(nome) {
     for (let i = 0; i < abas.length; i++) {
         abas[i].classList.remove("ativa");
@@ -39,6 +34,7 @@ for (let i = 0; i < abas.length; i++) {
     abas[i].addEventListener("click", function() {
         const nome = abas[i].getAttribute("data-aba");
         abrirAba(nome);
+
     });
 }
 
@@ -50,6 +46,7 @@ function executarCodigo() {
     const codigoHTML = campoHTML.value;
     const codigoCSS = campoCSS.value;
     const codigoJS = campoJS.value;
+
 
     const pagina = `
         <!DOCTYPE html>
@@ -81,6 +78,7 @@ function executarCodigo() {
     previa.srcdoc = pagina;
 }
 
+
 if (botaoExecutar) {
     botaoExecutar.addEventListener("click", executarCodigo);
 }
@@ -104,6 +102,7 @@ if (botaoRestaurar) {
         executarCodigo();
     });
 }
+
 
 function configurarEditor(campo) {
     if (!campo) {
@@ -192,5 +191,4 @@ let contador = 0;
 configurarEditor(campoHTML);
 configurarEditor(campoCSS);
 configurarEditor(campoJS);
-
 executarCodigo();
