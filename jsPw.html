@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0b1020">
-    <title>Aprenda JavaScript | FrontEscola</title>
+    <title>FrontEscola</title>
     <link rel="stylesheet" href="SitePWcss.css">
     <script src="SitePWjs.js" defer></script>
 </head>
@@ -24,15 +24,15 @@
 
     <main class="aula">
         <section class="aula-sec">
-            <span class="etiqueta">MÓDULO 03 · INICIANTE</span>
-            <h1>Aprenda <span class="destaque">JavaScript</span> do zero.</h1>
-            <p>Aprenda a dar vida às páginas web com variáveis, condições, repetições, funções e eventos. No final, pratique os conceitos em um pequeno projeto interativo.</p>
+            <span class="etiqueta">MÓDULO 03  INICIANTE</span>
+            <h1>Aprenda <span class="destaque">JavaScript</span> do começo</h1>
+            <p>Aprenda a dar vida a sites com variáveis, funções e eventos.</p>
             <a href="#introducao" class="botao-aula">Começar a aprender</a>
         </section>
 
         <section id="introducao" class="secao-aula">
-            <h2>01. O que é JavaScript?</h2>
-            <p>JavaScript é uma linguagem de programação muito utilizada para criar interatividade em páginas web. Com ela, um botão pode responder a um clique, um formulário pode validar informações e o conteúdo da página pode mudar sem precisar recarregá-la.</p>
+            <h2>01 O que é JavaScript?</h2>
+            <p>JavaScript é uma linguagem de programação muito utilizada para criar interatividade em páginas web. Com ela, um botão pode responder a um clique, um formulário pode validar informações e o conteúdo da página pode mudar sem precisar recarregar.</p>
             <div class="cards-tecnologia">
                 <article class="codigo-card">
                     <h3>HTML</h3>
@@ -50,17 +50,17 @@
         </section>
 
         <section class="secao-aula">
-            <h2>02. Como adicionar JavaScript</h2>
-            <p>Você pode escrever JavaScript dentro da tag script ou em um arquivo separado. Em projetos organizados, é comum utilizar um arquivo externo.</p>
+            <h2>02 Como adicionar JavaScript</h2>
+            <p>Você pode escrever o JS dentro da tag script ou em um arquivo separado. Em projetos organizados normalmente usam um arquivo externo.</p>
             <p>&lt;script src="script.js" defer&gt;&lt;/script&gt;</p>
-            <p>O atributo src indica o arquivo. O atributo defer faz o navegador executar o script depois de interpretar o HTML.</p>
+            <p>O atributo src indica o arquivo, o atributo defer faz o navegador executar o script depois do HTML.</p>
             <p>console.log("Olá, mundo!");</p>
             <p>console.log() mostra uma mensagem no console do navegador, sendo útil para testar o código e investigar problemas.</p>
         </section>
 
         <section class="secao-aula">
-            <h2>03. Variáveis e tipos de dados</h2>
-            <p>Variáveis guardam valores que podem ser utilizados pelo programa. Prefira const quando não precisar reatribuir o valor e use let quando ele puder mudar.</p>
+            <h2>03 Variáveis e tipos de dados</h2>
+            <p>Variáveis guardam valores que podem ser utilizados pelo programa, use const quando não precisar mudarr o valor e use let quando ele puder mudar.</p>
             <p>const nome = "Lucas";
 let idade = 16;
 let estudando = true;
@@ -77,8 +77,8 @@ console.log(estudando);</p>
         </section>
 
         <section class="secao-aula">
-            <h2>04. Operadores</h2>
-            <p>Operadores permitem fazer cálculos, comparar valores e combinar condições.</p>
+            <h2>04 Operadores</h2>
+            <p>Operadores permitem fazer cálculos, comparar valores e combinar condições</p>
             <p>const a = 10;
 const b = 3;
 
@@ -98,7 +98,7 @@ console.log(a === b);</p>
         </section>
 
         <section class="secao-aula">
-            <h2>05. Condições</h2>
+            <h2>05 Condições</h2>
             <p>Use if e else para executar partes diferentes do código dependendo de uma condição.</p>
             <p>const nota = 8;
 
@@ -107,12 +107,12 @@ if (nota >= 6) {
 } else {
     console.log("Precisa estudar mais");
 }</p>
-            <p>A condição dentro dos parênteses é avaliada. Se for verdadeira, o primeiro bloco é executado; caso contrário, o bloco do else é executado.</p>
+            <p>A condição dentro dos parênteses é avaliada e se for verdadeira o primeiro bloco é executado, senão o bloco do else é executado.</p>
         </section>
 
         <section class="secao-aula">
-            <h2>06. Repetições</h2>
-            <p>Laços de repetição executam um bloco de código várias vezes. Um for é útil quando sabemos quantas repetições queremos fazer.</p>
+            <h2>06 Repetições</h2>
+            <p>Laços de repetição executam um bloco de código várias vezes, um for é útil quando sabemos quantas repetições queremos fazer.</p>
             <p>for (let numero = 1; numero <= 5; numero++) {
     console.log(numero);
 }</p>
@@ -120,8 +120,8 @@ if (nota >= 6) {
         </section>
 
         <section class="secao-aula">
-            <h2>07. Funções</h2>
-            <p>Funções agrupam instruções que podem ser executadas quando necessário. Elas podem receber parâmetros e devolver resultados.</p>
+            <h2>07 Funções</h2>
+            <p>Funções agrupam instruções que podem ser executadas quando preciso</p>
             <p>function somar(a, b) {
     return a + b;
 }
@@ -136,15 +136,15 @@ console.log(resultado);</p>
         </section>
 
         <section class="secao-aula">
-            <h2>08. Manipulando a página com DOM</h2>
-            <p>O DOM permite que o JavaScript encontre e altere elementos HTML. Com getElementById(), podemos selecionar um elemento pelo seu ID.</p>
+            <h2>08 Manipulando a página com DOM</h2>
+            <p>O DOM deixa com que o JavaScript encontre e mude os elementos HTML. Com getElementById(), tem como selecionar um elemento pelo seu ID.</p>
             <p>const titulo = document.getElementById("titulo");
 titulo.textContent = "Texto atualizado!";</p>
-            <p>O código procura um elemento com id="titulo" e altera seu texto. O elemento precisa existir no HTML para ser encontrado.</p>
+            <p>O código procura um elemento com id="titulo" e muda seu texto. O elemento precisa existir no HTML para ser encontrado.</p>
         </section>
 
         <section class="secao-aula">
-            <h2>09. Eventos</h2>
+            <h2>09 Eventos</h2>
             <p>Eventos permitem reagir às ações de quem utiliza a página, como clicar em um botão.</p>
             <p>const botao = document.getElementById("meu-botao");
 
@@ -155,8 +155,8 @@ botao.addEventListener("click", function() {
         </section>
 
         <section class="secao-aula">
-            <h2>10. Pratique: contador de cliques</h2>
-            <p>Este exemplo usa variáveis, funções, seleção de elementos e eventos. Clique nos botões para testar.</p>
+            <h2>10 Exemplo</h2>
+            <p>Esse exemplo usa variáveis, funções, seleção de elementos e eventos</p>
             <div class="codigo-card">
                 <h3 id="contador-titulo">Contador: <span id="valor-contador">0</span></h3>
                 <button type="button" class="botao-aula" id="diminuir-contador">Diminuir</button>
@@ -198,16 +198,21 @@ botao.addEventListener("click", function() {
         </section>
 
         <section class="chamada">
-            <h2>Você já deu os primeiros passos com <span>JavaScript!</span></h2>
-            <p>Continue praticando: crie pequenos projetos, teste possibilidades e leia as mensagens do console para entender seus erros.</p>
+            <h2>Você já deu seus primeiros passos com <span>JavaScript</span></h2>
+            <p>Continue praticando: crie pequenos projetos e teste possibilidades</p>
             <a href="htmlPW.html" class="botao-aula">Revisar HTML</a>
             <a href="cssPW.html" class="botao-aula">Revisar CSS</a>
             <a href="index.html" class="botao-aula">Voltar ao início</a>
         </section>
     </main>
     <footer class="rodape">
-        <p>FrontEscola — Aprenda desenvolvimento web, um passo de cada vez.</p>
+        <a href="#" class="marca">
+            <span class="marca-icon"></span>
+            <span>Front<span class="destaque">Escola</span></span>
+        </a>
+
+        <p class="autores">Lucas Trivelati e Nicolas Campelo</p>
+
     </footer>
-   
 </body>
 </html>
