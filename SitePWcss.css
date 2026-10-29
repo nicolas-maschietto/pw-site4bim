@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border-radius: 7px;
 }
 
 html {
@@ -26,14 +25,11 @@ button,
 input,
 textarea {
     font: inherit;
-    
 }
 
 button,
 a {
     cursor: pointer;
-    color: rgb(255, 232, 105);
-    text-shadow: 2px 2px 4px rgb(194, 176, 75) ;
 }
 
 h1,
@@ -45,7 +41,6 @@ p {
 
 p {
     max-width: 800px;
-
 }
 
 .cabeca {
@@ -57,26 +52,24 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    background-color: black;
+    position:fixed;
+    top:0;
 }
 
 .div11,
-.div12 {
-    display: flex;
-    align-items: center;
-}
-
-
-
-.marca {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: bold;
-}
-
+.div12,
+.marca,
 .menugrid {
     display: flex;
     align-items: center;
+}
+
+.marca {
+    gap: 8px;
+}
+
+.menugrid {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -132,7 +125,7 @@ main {
     gap: 8px;
     padding: 8px 14px;
     border: 1px solid white;
-    background: black;
+    background-color: black;
     color: white;
     text-align: center;
 }
@@ -163,7 +156,6 @@ main {
     margin-bottom: 15px;
 }
 
-
 .codigo {
     overflow-x: auto;
     padding: 10px 0;
@@ -187,8 +179,8 @@ main {
 }
 
 .logo {
-    height: 100px;
     width: 100px;
+    height: 100px;
 }
 
 .mini-codigo {
@@ -228,7 +220,8 @@ main {
     margin-bottom: 25px;
 }
 
-.cards-tecnologia {
+.cards-tecnologia,
+.comparacao-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
@@ -257,12 +250,6 @@ main {
     gap: 8px;
     margin-top: auto;
     padding-top: 15px;
-}
-
-.comparacao-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
 }
 
 .comparacao-item {
@@ -305,10 +292,6 @@ main {
     border: 1px solid white;
 }
 
-.trilha-icon,
-.trilha-seta {
-    flex-shrink: 0;
-}
 
 .aula {
     width: 100%;
@@ -390,7 +373,7 @@ main {
 .editor-abas button {
     padding: 8px 15px;
     border: 1px solid white;
-    background: black;
+    background-color: black;
     color: white;
 }
 
@@ -410,7 +393,7 @@ textarea {
     min-height: 180px;
     padding: 12px;
     border: 1px solid white;
-    background: black;
+    background-color: black;
     color: white;
     resize: vertical;
 }
@@ -420,7 +403,7 @@ textarea {
     width: 100%;
     min-height: 250px;
     border: 1px solid white;
-    background: white;
+    background-color: white;
 }
 
 .quiz {
