@@ -2,46 +2,519 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-    transition: 0.3s;
+    border-radius: 7px;
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 80px;
 }
 
 body {
-    background-color: rgb(19, 20, 22);
-    align-items: center;
-    color:white;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+    
+}
+
+button,
+a {
+    cursor: pointer;
+    color: rgb(255, 232, 105);
+    text-shadow: 2px 2px 4px rgb(194, 176, 75) ;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 12px;
+}
+
+p {
+    max-width: 800px;
+
 }
 
 .cabeca {
+    width: 100%;
+    min-height: 60px;
+    padding: 10px 5%;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
 
-height: 50px;
-background-color: rgb(31, 34, 37);
-text-align: center;
+.div11,
+.div12 {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
 }
 
 .menugrid {
-    display: grid(4, 1fr);
-    orientation: landscape;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-
-.div11{
-    display: inline;
+main {
     width: 100%;
-    position: left;
-    margin-right: 80%;
-    margin-top: 10%;
-    item
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
 }
 
 .sec {
-    border-radius: 10px;
-    border: 2px solid gold;
-    box-shadow: 2px 2px 4px gold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 25px;
+    border: 1px solid white;
+    margin-bottom: 30px;
+}
 
+.secconteudo {
+    flex: 1 1 300px;
+    min-width: 0;
+}
+
+.sectexto {
+    max-width: 600px;
+}
+
+.etiqueta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.sec-botoes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.botao,
+.botao-aula {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.codigo-card {
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.sec > .codigo-card {
+    flex: 1 1 300px;
+}
+
+.codigo-topo,
+.janela-topo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.codigo-topo {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+}
+
+
+.codigo {
+    overflow-x: auto;
+    padding: 10px 0;
+    font-family: monospace;
+    white-space: nowrap;
+}
+
+.preview {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid white;
+}
+
+.preview-titulo,
+.preview-tag {
+    display: inline-block;
+}
+
+.preview h2 {
+    margin-top: 10px;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.mini-codigo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.codigo-tag,
+.codigo-cor,
+.codigo-comentario {
+    overflow-wrap: anywhere;
+}
+
+.janela-topo {
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.janela-conteudo {
+    padding: 15px;
+}
+
+.linha-divisoria {
+    border-top: 1px solid white;
+    margin: 15px 0;
+}
+
+.secao {
+    margin-bottom: 40px;
+}
+
+.secao-cabecalho {
+    margin-bottom: 25px;
+}
+
+.cards-tecnologia {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.tecnologia-card {
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.icone-linguagem {
+    margin-bottom: 15px;
+}
+
+.nivel {
+    margin-bottom: 10px;
+}
+
+.link-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 15px;
+}
+
+.comparacao-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.comparacao-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid white;
+}
+
+.comparacao-numero {
+    flex-shrink: 0;
+}
+
+.exemplo-interativo {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.exemplo-conteudo,
+.exemplo-visual {
+    min-width: 0;
+}
+
+.trilha-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.trilha-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid white;
+}
+
+.trilha-icon,
+.trilha-seta {
+    flex-shrink: 0;
+}
+
+.aula {
+    width: 100%;
+}
+
+.aula-sec,
+.secao-aula {
+    padding: 20px;
+    border: 1px solid white;
+    margin-bottom: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grade-aula,
+.grade {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.cartao-aula {
+    min-width: 0;
+    padding: 18px;
+    border: 1px solid white;
+}
+
+.lista-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.passo {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.passo-numero {
+    flex-shrink: 0;
+}
+
+.numero-aula {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.nota {
+    padding: 15px;
+    border: 1px solid white;
+    margin: 15px 0;
+}
+
+.final-aula,
+.chamada {
+    padding: 25px;
+    border: 1px solid white;
+    margin-top: 30px;
+}
+
+.final-aula a,
+.chamada a {
+    margin: 5px;
+}
+
+.editor-abas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.editor-abas button {
+    padding: 8px 15px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+}
+
+.editor-painel {
+    width: 100%;
+    min-width: 0;
+}
+
+.editor-painel[hidden] {
+    display: none;
+}
+
+.editor-painel textarea,
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 180px;
+    padding: 12px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+    resize: vertical;
+}
+
+#resultado-codigo {
+    display: block;
+    width: 100%;
+    min-height: 250px;
+    border: 1px solid white;
+    background: white;
+}
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.quiz label,
+.codigo-card label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    flex-shrink: 0;
+    margin-top: 6px;
+}
+
+#resultado-quiz,
+#resultado-exemplo {
+    margin-top: 15px;
+}
+
+.rodape {
+    padding: 20px 5%;
+    border-top: 1px solid white;
+    text-align: center;
+}
+
+.rodape p {
+    max-width: none;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .cards-tecnologia,
+    .comparacao-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .exemplo-interativo {
+        grid-template-columns: 1fr;
+    }
+
+    .cabeca {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menugrid {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    main {
+        padding: 12px;
+    }
+
+    .sec,
+    .aula-sec,
+    .secao-aula {
+        padding: 15px;
+    }
+
+    .cards-tecnologia,
+    .comparacao-grid,
+    .grade-aula,
+    .grade {
+        grid-template-columns: 1fr;
+    }
+
+    .sec-botoes {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .sec-botoes .botao {
+        width: 100%;
+    }
+
+    .menugrid {
+        gap: 12px;
+    }
+
+    .codigo-card {
+        padding: 12px;
+    }
+
+    .trilha-item {
+        gap: 10px;
+    }
 }
