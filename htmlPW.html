@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101510">
+    <title>Aprenda HTML | FrontStart</title>
+    <link rel="stylesheet" href="SitePWcss.css">
+    <script src="SitePWjs.js" defer></script>
+    
+</head>
+<body>
+
+    <header class="cabeca">
+        <a href="index.html" class="marca">
+             <span class="marca-icon">&lt;/&gt;</span>
+            <span>Front<span class="destaque">Escola</span></span>
+        </a>
+
+        <nav class="menugrid">
+            <a href="index.html">Início</a>
+            <a href="htmlPW.html">HTML</a>
+            <a href="cssPW.html">CSS</a>
+            <a href="jsPw.html">JavaScript</a>
+        </nav>
+    </header>
+
+    <main class="aula">
+
+        <section class="aula-sec">
+            <span class="etiqueta">MÓDULO 01 · INICIANTE</span>
+
+            <h1>Aprenda <span class="destaque">HTML</span> do zero.</h1>
+
+            <p>
+                Descubra como construir a estrutura de uma página web,
+                organizar textos, criar links, adicionar imagens e montar
+                seu primeiro site usando HTML.
+            </p>
+
+            <a href="#primeiros-passos" class="botao-aula">
+                Começar a aprender
+            </a>
+        </section>
+
+        <section class="secao-aula" id="primeiros-passos">
+            <h2>01. O que é HTML?</h2>
+
+            <p>
+                HTML significa <strong>HyperText Markup Language</strong>,
+                ou Linguagem de Marcação de Hipertexto. É utilizada para
+                organizar e estruturar o conteúdo de páginas da internet.
+            </p>
+
+            <p>
+                Pense em um site como uma casa: o HTML representa a
+                estrutura, o CSS cuida da aparência e o JavaScript
+                adiciona interatividade.
+            </p>
+
+            <div class="grade-aula">
+                <article class="cartao-aula">
+                    <div class="numero-aula">01 · ESTRUTURA</div>
+                    <h3 class="destaque">HTML</h3>
+                    <p>Define títulos, parágrafos, imagens, links e outros elementos.</p>
+                </article>
+
+                <article class="cartao-aula">
+                    <div class="numero-aula">02 · APARÊNCIA</div>
+                    <h3 class="destaque">CSS</h3>
+                    <p>Define cores, tamanhos, espaçamentos e organização visual.</p>
+                </article>
+
+                <article class="cartao-aula">
+                    <div class="numero-aula">03 · INTERATIVIDADE</div>
+                    <h3 class="destaque">JavaScript</h3>
+                    <p>Permite responder a cliques, validar formulários e alterar conteúdos.</p>
+                </article>
+
+                <article class="cartao-aula">
+                    <div class="numero-aula">04 · OBJETIVO</div>
+                    <h3 class="destaque">Seu primeiro site</h3>
+                    <p>Você pode combinar as três tecnologias para criar páginas completas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao-aula">
+            <h2>02. A estrutura básica do HTML</h2>
+
+            <p>
+                Todo documento HTML começa com uma estrutura que informa
+                ao navegador como interpretar a página.
+            </p>
+
+            <div class="codigo">
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"
+          content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Meu primeiro site&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+    &lt;p&gt;Este é meu primeiro site.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <div class="nota">
+                <strong>Importante:</strong> a maioria das tags possui
+                abertura e fechamento. Por exemplo,
+                <code>&lt;p&gt;</code> inicia um parágrafo e
+                <code>&lt;/p&gt;</code> termina esse parágrafo.
+                Algumas tags, como <code>&lt;img&gt;</code>, não precisam
+                de uma tag de fechamento.
+            </div>
+
+            <h3>Para que serve cada parte?</h3>
+
+            <div class="lista-tags">
+                <code>&lt;!DOCTYPE&gt;</code>
+                <span>Informa que o documento utiliza HTML moderno.</span>
+            </div>
+
+            <div class="lista-tags">
+                <code>&lt;html&gt;</code>
+                <span>É o elemento principal que contém o documento HTML.</span>
+            </div>
+
+            <div class="lista-tags">
+                <code>&lt;head&gt;</code>
+                <span>Contém informações sobre a página, como título e configurações.</span>
+            </div>
+
+            <div class="lista-tags">
+                <code>&lt;title&gt;</code>
+                <span>Define o título que aparece na aba do navegador.</span>
+            </div>
+
+            <div class="lista-tags">
+                <code>&lt;body&gt;</code>
+                <span>Contém o conteúdo que aparece na página.</span>
+            </div>
+        </section>
+
+        <section class="secao-aula">
+            <h2>03. Títulos e parágrafos</h2>
+
+            <p>
+                Os títulos organizam as informações. O HTML possui seis
+                níveis de título, de <code>&lt;h1&gt;</code> a
+                <code>&lt;h6&gt;</code>. Já a tag
+                <code>&lt;p&gt;</code> é utilizada para parágrafos.
+            </p>
+
+            <div class="codigo">
+                <pre><code>&lt;h1&gt;Meu primeiro site&lt;/h1&gt;
+&lt;h2&gt;Sobre mim&lt;/h2&gt;
+&lt;p&gt;Olá! Estou aprendendo HTML.&lt;/p&gt;
+&lt;h2&gt;Meus interesses&lt;/h2&gt;
+&lt;p&gt;Gosto de tecnologia e programação.&lt;/p&gt;</code></pre>
+            </div>
+
+            <div class="exemplo-visual">
+                <h1>Meu primeiro site</h1>
+                <h2>Sobre mim</h2>
+                <p>Olá! Estou aprendendo HTML.</p>
+                <h2>Meus interesses</h2>
+                <p>Gosto de tecnologia e programação.</p>
+            </div>
+
+            <div class="nota">
+                Geralmente, utilize um <code>&lt;h1&gt;</code> para o
+                título principal da página e organize os subtítulos com
+                <code>&lt;h2&gt;</code> e <code>&lt;h3&gt;</code>.
+            </div>
+        </section>
+
+        <section class="secao-aula">
+            <h2>04. Links e imagens</h2>
+
+            <div class="grade-aula">
+                <article class="cartao-aula">
+                    <h3>Como criar um link</h3>
+
+                    <p>
+                        A tag <code>&lt;a&gt;</code> cria um link.
+                        O atributo <code>href</code> indica o destino.
+                    </p>
+
+                    <div class="codigo">
+                        <pre><code>&lt;a href="https://www.google.com"&gt;
+    Acessar o Google
+&lt;/a&gt;</code></pre>
+                    </div>
+
+                    <div class="exemplo-visual">
+                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                            Acessar o Google
+                        </a>
+                    </div>
+                </article>
+
+                <article class="cartao-aula">
+                    <h3>Como adicionar uma imagem</h3>
+
+                    <p>
+                        A tag <code>&lt;img&gt;</code> exibe uma imagem.
+                        O atributo <code>src</code> indica sua origem e
+                        <code>alt</code> fornece uma descrição.
+                    </p>
+
+                    <div class="codigo">
+                        <pre><code>&lt;img
+    src="imagem.jpg"
+    alt="Descrição da imagem"
+    width="250"
+&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        O arquivo <code>imagem.jpg</code> precisa existir
+                        no local indicado pelo caminho de <code>src</code>.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao-aula">
+            <h2>05. Listas em HTML</h2>
+
+            <p>Existem dois tipos comuns de listas: ordenadas e não ordenadas.</p>
+
+            <div class="grade-aula">
+                <article class="cartao-aula">
+                    <h3>Lista não ordenada</h3>
+
+                    <div class="codigo">
+                        <pre><code>&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </div>
+
+                    <div class="exemplo-visual">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <p>Usa marcadores, como pontos, para apresentar os itens.</p>
+                </article>
+
+                <article class="cartao-aula">
+                    <h3>Lista ordenada</h3>
+
+                    <div class="codigo">
+                        <pre><code>&lt;ol&gt;
+    &lt;li&gt;Estudar HTML&lt;/li&gt;
+    &lt;li&gt;Aprender CSS&lt;/li&gt;
+    &lt;li&gt;Praticar JavaScript&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    </div>
+
+                    <div class="exemplo-visual">
+                        <ol>
+                            <li>Estudar HTML</li>
+                            <li>Aprender CSS</li>
+                            <li>Praticar JavaScript</li>
+                        </ol>
+                    </div>
+
+                    <p>Numera os itens automaticamente.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao-aula">
+            <h2>06. Outras tags importantes</h2>
+
+            <div class="cartao-aula">
+                <div class="lista-tags">
+                    <code>&lt;strong&gt;</code>
+                    <span>Indica que um conteúdo possui grande importância, normalmente exibido em negrito.</span>
+                </div>
+
+                <div class="lista-tags">
+                    <code>&lt;em&gt;</code>
+                    <span>Dá ênfase a um trecho, normalmente exibido em itálico.</span>
+                </div>
+
+                <div class="lista-tags">
+                    <code>&lt;br&gt;</code>
+                    <span>Insere uma quebra de linha.</span>
+                </div>
+
+                <div class="lista-tags">
+                    <code>&lt;hr&gt;</code>
+                    <span>Representa uma separação temática, geralmente mostrada como uma linha horizontal.</span>
+                </div>
+
+                <div class="lista-tags">
+                    <code>&lt;div&gt;</code>
+                    <span>Agrupa elementos em um contêiner genérico, útil para organizar o layout.</span>
+                </div>
+
+                <div class="lista-tags">
+                    <code>&lt;button&gt;</code>
+                    <span>Cria um botão que pode realizar ações ou enviar formulários.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-aula">
+            <h2>07. Como criar sua primeira página</h2>
+
+            <div class="passo">
+                <div class="passo-numero">1</div>
+                <div>
+                    <h3>Crie um arquivo</h3>
+                    <p>Crie um arquivo chamado <code>index.html</code> em seu editor de código.</p>
+                </div>
+            </div>
+
+            <div class="passo">
+                <div class="passo-numero">2</div>
+                <div>
+                    <h3>Escreva a estrutura</h3>
+                    <p>Adicione as tags principais: <code>html</code>, <code>head</code> e <code>body</code>.</p>
+                </div>
+            </div>
+
+            <div class="passo">
+                <div class="passo-numero">3</div>
+                <div>
+                    <h3>Adicione seu conteúdo</h3>
+                    <p>Crie um título, alguns parágrafos e uma lista com assuntos de que você gosta.</p>
+                </div>
+            </div>
+
+            <div class="passo">
+                <div class="passo-numero">4</div>
+                <div>
+                    <h3>Abra no navegador</h3>
+                    <p>Salve o arquivo e abra-o no navegador para ver o resultado.</p>
+                </div>
+            </div>
+
+            <a href="index.html#laboratorio" class="botao-aula">
+                Praticar no laboratório
+            </a>
+        </section>
+
+        <section class="secao-aula">
+            <h2>08. Teste seus conhecimentos</h2>
+
+            <p>Escolha uma alternativa para cada pergunta e confira seu resultado.</p>
+
+            <div class="quiz">
+                <h3>1. Qual é a função principal do HTML?</h3>
+
+                <label>
+                    <input type="radio" name="pergunta1" value="a">
+                    Criar a estrutura do conteúdo de uma página.
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta1" value="b">
+                    Definir apenas as cores do site.
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta1" value="c">
+                    Armazenar todos os arquivos da internet.
+                </label>
+            </div>
+
+            <div class="quiz">
+                <h3>2. Qual tag é usada para criar um parágrafo?</h3>
+
+                <label>
+                    <input type="radio" name="pergunta2" value="a">
+                    <code>&lt;h1&gt;</code>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta2" value="b">
+                    <code>&lt;p&gt;</code>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta2" value="c">
+                    <code>&lt;img&gt;</code>
+                </label>
+            </div>
+
+            <div class="quiz">
+                <h3>3. Qual atributo indica o destino de um link?</h3>
+
+                <label>
+                    <input type="radio" name="pergunta3" value="a">
+                    <code>src</code>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta3" value="b">
+                    <code>alt</code>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta3" value="c">
+                    <code>href</code>
+                </label>
+            </div>
+
+            <button type="button" class="botao-aula" id="corrigir-quiz">
+                Conferir respostas
+            </button>
+
+            <p class="resultado-quiz" id="resultado-quiz" aria-live="polite"></p>
+        </section>
+
+        <section class="final-aula">
+            <h2>Você concluiu a introdução ao <span class="destaque">HTML!</span></h2>
+
+            <p>
+                Agora você conhece a estrutura básica de uma página e
+                algumas das principais tags. O próximo passo é praticar
+                e aprender a estilizar seu conteúdo com CSS.
+            </p>
+
+            <a href="cssPW.html" class="botao-aula">
+                Continuar para CSS
+            </a>
+
+            <br>
+
+            <a href="index.html" class="botao-aula">
+                Voltar ao início
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>FrontStart — Aprenda desenvolvimento web, um passo de cada vez.</p>
+    </footer>
+
+    <script src="SitePWjs.js">
+    </script>
+
+</body>
+</html>

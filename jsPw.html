@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b1020">
+    <title>Aprenda JavaScript | FrontEscola</title>
+    <link rel="stylesheet" href="SitePWcss.css">
+    <script src="SitePWjs.js" defer></script>
+</head>
+<body>
+    <header class="cabeca">
+        <a href="index.html" class="marca">
+            <span class="marca-icon">&lt;/&gt;</span>
+            <span>Front<span class="destaque">Escola</span></span>
+        </a>
+        <nav class="menugrid">
+            <a href="index.html">Início</a>
+            <a href="htmlPW.html">HTML</a>
+            <a href="cssPW.html">CSS</a>
+            <a href="jsPw.html">JavaScript</a>
+        </nav>
+    </header>
+
+    <main class="aula">
+        <section class="aula-sec">
+            <span class="etiqueta">MÓDULO 03 · INICIANTE</span>
+            <h1>Aprenda <span class="destaque">JavaScript</span> do zero.</h1>
+            <p>Aprenda a dar vida às páginas web com variáveis, condições, repetições, funções e eventos. No final, pratique os conceitos em um pequeno projeto interativo.</p>
+            <a href="#introducao" class="botao-aula">Começar a aprender</a>
+        </section>
+
+        <section id="introducao" class="secao-aula">
+            <h2>01. O que é JavaScript?</h2>
+            <p>JavaScript é uma linguagem de programação muito utilizada para criar interatividade em páginas web. Com ela, um botão pode responder a um clique, um formulário pode validar informações e o conteúdo da página pode mudar sem precisar recarregá-la.</p>
+            <div class="cards-tecnologia">
+                <article class="codigo-card">
+                    <h3>HTML</h3>
+                    <p>Organiza a estrutura e o conteúdo da página.</p>
+                </article>
+                <article class="codigo-card">
+                    <h3>CSS</h3>
+                    <p>Define cores, tamanhos, espaçamentos e aparência.</p>
+                </article>
+                <article class="codigo-card">
+                    <h3>JavaScript</h3>
+                    <p>Adiciona lógica, comportamento e interatividade.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao-aula">
+            <h2>02. Como adicionar JavaScript</h2>
+            <p>Você pode escrever JavaScript dentro da tag script ou em um arquivo separado. Em projetos organizados, é comum utilizar um arquivo externo.</p>
+            <p>&lt;script src="script.js" defer&gt;&lt;/script&gt;</p>
+            <p>O atributo src indica o arquivo. O atributo defer faz o navegador executar o script depois de interpretar o HTML.</p>
+            <p>console.log("Olá, mundo!");</p>
+            <p>console.log() mostra uma mensagem no console do navegador, sendo útil para testar o código e investigar problemas.</p>
+        </section>
+
+        <section class="secao-aula">
+            <h2>03. Variáveis e tipos de dados</h2>
+            <p>Variáveis guardam valores que podem ser utilizados pelo programa. Prefira const quando não precisar reatribuir o valor e use let quando ele puder mudar.</p>
+            <p>const nome = "Lucas";
+let idade = 16;
+let estudando = true;
+
+console.log(nome);
+console.log(idade);
+console.log(estudando);</p>
+            <ul>
+                <li><strong>String:</strong> texto, como "Olá".</li>
+                <li><strong>Number:</strong> número, como 10 ou 3.5.</li>
+                <li><strong>Boolean:</strong> valor lógico, true ou false.</li>
+                <li><strong>Array:</strong> lista de valores, como ["HTML", "CSS"].</li>
+            </ul>
+        </section>
+
+        <section class="secao-aula">
+            <h2>04. Operadores</h2>
+            <p>Operadores permitem fazer cálculos, comparar valores e combinar condições.</p>
+            <p>const a = 10;
+const b = 3;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+console.log(a > b);
+console.log(a === b);</p>
+            <ul>
+                <li>+, -, * e /: operações matemáticas.</li>
+                <li>%: resto da divisão.</li>
+                <li>===: compara valor e tipo.</li>
+                <li>&amp;&amp; e ||: operadores lógicos “E” e “OU”.</li>
+            </ul>
+        </section>
+
+        <section class="secao-aula">
+            <h2>05. Condições</h2>
+            <p>Use if e else para executar partes diferentes do código dependendo de uma condição.</p>
+            <p>const nota = 8;
+
+if (nota >= 6) {
+    console.log("Aprovado");
+} else {
+    console.log("Precisa estudar mais");
+}</p>
+            <p>A condição dentro dos parênteses é avaliada. Se for verdadeira, o primeiro bloco é executado; caso contrário, o bloco do else é executado.</p>
+        </section>
+
+        <section class="secao-aula">
+            <h2>06. Repetições</h2>
+            <p>Laços de repetição executam um bloco de código várias vezes. Um for é útil quando sabemos quantas repetições queremos fazer.</p>
+            <p>for (let numero = 1; numero <= 5; numero++) {
+    console.log(numero);
+}</p>
+            <p>O exemplo começa em 1, continua enquanto o número for menor ou igual a 5 e aumenta o valor em 1 a cada volta.</p>
+        </section>
+
+        <section class="secao-aula">
+            <h2>07. Funções</h2>
+            <p>Funções agrupam instruções que podem ser executadas quando necessário. Elas podem receber parâmetros e devolver resultados.</p>
+            <p>function somar(a, b) {
+    return a + b;
+}
+
+const resultado = somar(4, 6);
+console.log(resultado);</p>
+            <ul>
+                <li><strong>Parâmetros:</strong> valores recebidos pela função, como a e b.</li>
+                <li><strong>return:</strong> devolve um resultado para quem chamou a função.</li>
+                <li><strong>Chamada:</strong> somar(4, 6) executa a função com esses valores.</li>
+            </ul>
+        </section>
+
+        <section class="secao-aula">
+            <h2>08. Manipulando a página com DOM</h2>
+            <p>O DOM permite que o JavaScript encontre e altere elementos HTML. Com getElementById(), podemos selecionar um elemento pelo seu ID.</p>
+            <p>const titulo = document.getElementById("titulo");
+titulo.textContent = "Texto atualizado!";</p>
+            <p>O código procura um elemento com id="titulo" e altera seu texto. O elemento precisa existir no HTML para ser encontrado.</p>
+        </section>
+
+        <section class="secao-aula">
+            <h2>09. Eventos</h2>
+            <p>Eventos permitem reagir às ações de quem utiliza a página, como clicar em um botão.</p>
+            <p>const botao = document.getElementById("meu-botao");
+
+botao.addEventListener("click", function() {
+    alert("Você clicou no botão!");
+});</p>
+            <p>addEventListener() registra uma função que será executada quando o evento acontecer. Neste exemplo, a mensagem aparece após o clique.</p>
+        </section>
+
+        <section class="secao-aula">
+            <h2>10. Pratique: contador de cliques</h2>
+            <p>Este exemplo usa variáveis, funções, seleção de elementos e eventos. Clique nos botões para testar.</p>
+            <div class="codigo-card">
+                <h3 id="contador-titulo">Contador: <span id="valor-contador">0</span></h3>
+                <button type="button" class="botao-aula" id="diminuir-contador">Diminuir</button>
+                <button type="button" class="botao-aula" id="aumentar-contador">Aumentar</button>
+                <button type="button" class="botao-aula" id="zerar-contador">Zerar</button>
+            </div>
+            <p>let contador = 0;
+
+botao.addEventListener("click", function() {
+    contador++;
+    valor.textContent = contador;
+});</p>
+            <p>Experimente explicar o que acontece quando o contador aumenta e por que o texto é atualizado.</p>
+        </section>
+
+        <section class="secao-aula">
+            <h2>11. Teste seus conhecimentos</h2>
+            <p>Escolha uma alternativa para cada pergunta e confira sua pontuação.</p>
+            <div class="codigo-card">
+                <h3>1. Para que o JavaScript é muito utilizado em páginas web?</h3>
+                <label><input type="radio" name="pergunta1" value="a"> Adicionar interatividade e lógica.</label>
+                <label><input type="radio" name="pergunta1" value="b"> Substituir sempre o HTML e o CSS.</label>
+                <label><input type="radio" name="pergunta1" value="c"> Apenas escolher cores.</label>
+            </div>
+            <div class="codigo-card">
+                <h3>2. Qual palavra declara uma variável que pode receber outro valor?</h3>
+                <label><input type="radio" name="pergunta2" value="a"> const</label>
+                <label><input type="radio" name="pergunta2" value="b"> let</label>
+                <label><input type="radio" name="pergunta2" value="c"> style</label>
+            </div>
+            <div class="codigo-card">
+                <h3>3. Qual método registra uma função para responder a um evento?</h3>
+                <label><input type="radio" name="pergunta3" value="a"> console.log()</label>
+                <label><input type="radio" name="pergunta3" value="b"> getElementById()</label>
+                <label><input type="radio" name="pergunta3" value="c"> addEventListener()</label>
+            </div>
+            <button type="button" class="botao-aula" id="corrigir-quiz">Conferir respostas</button>
+            <p id="resultado-quiz" aria-live="polite"></p>
+        </section>
+
+        <section class="chamada">
+            <h2>Você já deu os primeiros passos com <span>JavaScript!</span></h2>
+            <p>Continue praticando: crie pequenos projetos, teste possibilidades e leia as mensagens do console para entender seus erros.</p>
+            <a href="htmlPW.html" class="botao-aula">Revisar HTML</a>
+            <a href="cssPW.html" class="botao-aula">Revisar CSS</a>
+            <a href="index.html" class="botao-aula">Voltar ao início</a>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>FrontEscola — Aprenda desenvolvimento web, um passo de cada vez.</p>
+    </footer>
+   
+</body>
+</html>

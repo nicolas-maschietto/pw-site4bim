@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    background-color: rgb(19, 20, 22);
+    align-items: center;
+    color:white;
+}
+
+.cabeca {
+
+height: 50px;
+background-color: rgb(31, 34, 37);
+text-align: center;
+}
+
+.menugrid {
+    display: grid(4, 1fr);
+    orientation: landscape;
+}
+
+
+.div11{
+    display: inline;
+    width: 100%;
+    position: left;
+    margin-right: 80%;
+    margin-top: 10%;
+    item
+}
+
+.sec {
+    border-radius: 10px;
+    border: 2px solid gold;
+    box-shadow: 2px 2px 4px gold;
+
+}
