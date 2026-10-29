@@ -167,6 +167,14 @@ if (botaoQuiz && resultadoQuiz) {
     });
 }
 
+let codigo = document.getElementById("codigo");
+let atualizar = document.getElementById("atualizar");
+let resultado = document.getElementById("resultado");
+
+atualizar.addEventListener("click", function() {
+    resultado.innerHTML = codigo.value;
+});
+
 let contador = 0;
         const valorContador = document.getElementById("valor-contador");
         const atualizarContador = function() {
